@@ -1,6 +1,6 @@
 year = int(input("Введите год: "))
 sum = 0
-if year % 4 == 0:
+if year % 400 == 0 or ((year % 4 == 0) and (year % 100 !=0)):
     for i in range(1,13):
         if i == 1 or i == 3 or i == 12 or i == 5 or i == 7 or i == 8 or i == 10:
             for i in range(1,32):
